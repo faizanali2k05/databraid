@@ -1,0 +1,22 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "databraid"
+version = "0.1.0"
+description = "Small lineage metadata records for Python data transformations"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [{ name = "Faizan Ali" }]
+keywords = ["lineage", "data", "provenance", "etl", "metadata"]
+classifiers = ["Development Status :: 3 - Alpha", "Intended Audience :: Developers", "License :: OSI Approved :: MIT License", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.11", "Programming Language :: Python :: 3.12", "Programming Language :: Python :: 3.13", "Typing :: Typed"]
+
+[project.urls]
+Homepage = "https://github.com/faizanali2k05/databraid"
+Repository = "https://github.com/faizanali2k05/databraid"
+Issues = "https://github.com/faizanali2k05/databraid/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/databraid"]
